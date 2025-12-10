@@ -515,7 +515,7 @@ class StructType(RuntimeType):
         )
         self.__attrs_init__(
             bases=[base],
-            mro=[base, *base.mro],
+            mro=[base],
             name=name,
             desc=desc,
             wtype=wtype,
@@ -1351,7 +1351,7 @@ ARC4ContractBaseType: typing.Final[PyType] = _BaseType(
     mro=[ContractBaseType],
 )
 ARC4ClientBaseType: typing.Final[PyType] = _BaseType(name="algopy.arc4.ARC4Client")
-ARC4StructBaseType: typing.Final[PyType] = _BaseType(name="algopy.arc4.Struct", mro=(BytesType,))
+ARC4StructBaseType: typing.Final[PyType] = _BaseType(name="algopy.arc4.Struct")
 StructBaseType: typing.Final[PyType] = _BaseType(name="algopy._native.Struct")
 
 

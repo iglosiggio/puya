@@ -231,6 +231,8 @@ def _map_call(
                         if converted is not None:
                             arg_in = converted
                             break
+            if pytypes.BytesType in allowed_pytypes:
+                allowed_pytypes = (*allowed_pytypes, pytypes.BytesLikeType, pytypes.ARC4StructBaseType)
             stack_args.append(expect.argument_of_type_else_dummy(arg_in, *allowed_pytypes))
     return IntrinsicCall(
         op_code=op_mapping.op_code,
