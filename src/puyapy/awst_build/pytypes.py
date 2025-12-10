@@ -1241,6 +1241,10 @@ ValidatableType: typing.Final[PyType] = _CompileTimeType(
     name="algopy._interfaces._Validatable",
     wtype_error="{self} is not usable as a runtime type",
 )
+BytesLikeType: typing.Final[PyType] = _CompileTimeType(
+    name="algopy.op.BytesLike",
+    wtype_error="{self} is not usable as a runtime type",
+)
 
 
 @attrs.frozen(kw_only=True, order=False)
