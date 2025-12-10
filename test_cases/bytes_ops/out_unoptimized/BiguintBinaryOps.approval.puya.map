@@ -3,7 +3,7 @@
   "sources": [
     "../contract.py"
   ],
-  "mappings": ";;;;;;;;;;;;;;AAMiB;AACC;AACC;;;;AACI;AACC;;;AACA;AANhB;;;AAQ4B;AAA5B;;;AACO;;AAAP;AAMP;;;;;;AAUY;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;;AAGH;;;;;;AAEG;;AAAQ;AAAR;;AAAA;;AAEe;AAAR;AAAP;AAIA;;AAFO;AAEP;;AAAA;;AAFO;AAIA;AAAP;AAIA;;AAFU;;;AAEV;;AAAA;;AAEe;;;AAAR;AAAP;AAEA;;AAZO;AAYP;;AAAA;;AANU;;;AAQH;AAAP;AAEA;;AAhBO;AAgBP;;AAAA;;AAEe;;;;AAAR;AAAP;",
+  "mappings": ";;;;;;;;;;;;;AAKiB;AACC;AACC;;;;AACI;AACC;;;AACA;AANhB;;;AAQ4B;AAA5B;;;AAC8B;;AAAN;AAAA;AAAA;;AAAA;AAAiB;;AAAjB;AAAA;AACM;;AAAN;AAAA;AAAA;;AAAA;AAAiB;;AAAjB;AAAA;AADxB;;;AAAA;;AAEO;;AAAP;AAMP;;;;;;AAUY;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;AACS;;AAAA;;AAAA;AACF;;AAAA;AAAP;;AAGH;;;;;;AAEG;;AAAQ;;;AAAR;;AAAA;;AAEe;;;AAAR;AAAP;AAIA;;AAFO;AAEP;;AAAA;;AAFO;AAIA;AAAP;AAIA;;AAFU;;;AAEV;;AAAA;;AAEe;;;AAAR;AAAP;AAEA;;AAZO;AAYP;;AAAA;;AANU;;;AAQH;AAAP;AAEA;;AAhBO;AAgBP;;AAAA;;AAEe;;;;AAAR;AAAP;;AAMH;;;;;;;;;;AAEc;;AAAA;;AAAA;AAAoB;;AAAA;;AAAA;AAApB;AAAP;",
   "op_pc_offset": 0,
   "pc_events": {
     "1": {
@@ -11,12 +11,12 @@
       "params": {},
       "block": "main",
       "stack_in": [],
-      "op": "bytecblock 0x05 0xff 0x0f 0x00"
+      "op": "bytecblock 0x05 0xff 0x0f 0x"
     },
-    "11": {
+    "10": {
       "op": "b main_block@0"
     },
-    "14": {
+    "13": {
       "block": "main_block@0",
       "stack_in": [],
       "op": "bytec_1 // 0xff",
@@ -27,7 +27,7 @@
         "0xff"
       ]
     },
-    "15": {
+    "14": {
       "op": "bytec_2 // 0x0f",
       "defined_out": [
         "0x0f",
@@ -38,7 +38,7 @@
         "0x0f"
       ]
     },
-    "16": {
+    "15": {
       "op": "pushbytes 0xff0f",
       "defined_out": [
         "0x0f",
@@ -51,7 +51,7 @@
         "0xff0f"
       ]
     },
-    "20": {
+    "19": {
       "op": "bytec_1 // 0xff",
       "stack_out": [
         "0xff",
@@ -60,7 +60,7 @@
         "0xff"
       ]
     },
-    "21": {
+    "20": {
       "op": "pushbytes 0xf0",
       "defined_out": [
         "0x0f",
@@ -76,7 +76,7 @@
         "0xf0"
       ]
     },
-    "24": {
+    "23": {
       "op": "bytec_2 // 0x0f",
       "stack_out": [
         "0xff",
@@ -87,23 +87,23 @@
         "0x0f"
       ]
     },
-    "25": {
+    "24": {
       "callsub": "test_cases.bytes_ops.contract.do_some_ops",
       "op": "callsub do_some_ops",
       "stack_out": []
     },
-    "28": {
+    "27": {
       "op": "bytec_1 // 0xff",
       "stack_out": [
         "0xff"
       ]
     },
-    "29": {
+    "28": {
       "callsub": "test_cases.bytes_ops.contract.do_augmented_assignment_ops",
       "op": "callsub do_augmented_assignment_ops",
       "stack_out": []
     },
-    "32": {
+    "31": {
       "op": "pushint 1",
       "defined_out": [
         "1"
@@ -112,11 +112,198 @@
         "1"
       ]
     },
+    "33": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_Encoded(uint64)%0#0"
+      ],
+      "stack_out": [
+        "aggregate%as_Encoded(uint64)%0#0"
+      ]
+    },
     "34": {
-      "op": "return",
-      "stack_out": []
+      "op": "bytec_3 // 0x",
+      "defined_out": [
+        "0x",
+        "aggregate%as_Encoded(uint64)%0#0"
+      ],
+      "stack_out": [
+        "aggregate%as_Encoded(uint64)%0#0",
+        "0x"
+      ]
     },
     "35": {
+      "op": "uncover 1",
+      "stack_out": [
+        "0x",
+        "aggregate%as_Encoded(uint64)%0#0"
+      ]
+    },
+    "37": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%0#0"
+      ],
+      "stack_out": [
+        "aggregate%head%0#0"
+      ]
+    },
+    "38": {
+      "op": "pushint 2",
+      "defined_out": [
+        "2",
+        "aggregate%head%0#0"
+      ],
+      "stack_out": [
+        "aggregate%head%0#0",
+        "2"
+      ]
+    },
+    "40": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_Encoded(uint64)%1#0",
+        "aggregate%head%0#0"
+      ],
+      "stack_out": [
+        "aggregate%head%0#0",
+        "aggregate%as_Encoded(uint64)%1#0"
+      ]
+    },
+    "41": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "42": {
+      "op": "pushint 3",
+      "defined_out": [
+        "3",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "3"
+      ]
+    },
+    "44": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_Encoded(uint64)%2#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%as_Encoded(uint64)%2#0"
+      ]
+    },
+    "45": {
+      "op": "bytec_3 // 0x",
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%as_Encoded(uint64)%2#0",
+        "0x"
+      ]
+    },
+    "46": {
+      "op": "uncover 1",
+      "stack_out": [
+        "tmp%0#0",
+        "0x",
+        "aggregate%as_Encoded(uint64)%2#0"
+      ]
+    },
+    "48": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%2#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%head%2#0"
+      ]
+    },
+    "49": {
+      "op": "pushint 4",
+      "defined_out": [
+        "4",
+        "aggregate%head%2#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%head%2#0",
+        "4"
+      ]
+    },
+    "51": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_Encoded(uint64)%3#0",
+        "aggregate%head%2#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%head%2#0",
+        "aggregate%as_Encoded(uint64)%3#0"
+      ]
+    },
+    "52": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "53": {
+      "callsub": "test_cases.bytes_ops.contract.do_byteops_with_structs",
+      "op": "callsub do_byteops_with_structs",
+      "defined_out": [
+        "do_byteops_with_structs%0#0",
+        "do_byteops_with_structs%1#0"
+      ],
+      "stack_out": [
+        "do_byteops_with_structs%0#0",
+        "do_byteops_with_structs%1#0"
+      ]
+    },
+    "56": {
+      "op": "cover 1",
+      "defined_out": [
+        "do_byteops_with_structs%0#0",
+        "do_byteops_with_structs%1#0"
+      ],
+      "stack_out": [
+        "do_byteops_with_structs%1#0",
+        "do_byteops_with_structs%0#0"
+      ]
+    },
+    "58": {
+      "op": "pushint 1",
+      "stack_out": [
+        "do_byteops_with_structs%1#0",
+        "do_byteops_with_structs%0#0",
+        "1"
+      ]
+    },
+    "60": {
+      "op": "return",
+      "stack_out": [
+        "do_byteops_with_structs%1#0",
+        "do_byteops_with_structs%0#0"
+      ]
+    },
+    "61": {
       "subroutine": "test_cases.bytes_ops.contract.do_some_ops",
       "params": {
         "left#0": "bytes",
@@ -130,10 +317,10 @@
       "stack_in": [],
       "op": "proto 6 0"
     },
-    "38": {
+    "64": {
       "op": "b do_some_ops_block@0"
     },
-    "41": {
+    "67": {
       "block": "do_some_ops_block@0",
       "stack_in": [],
       "op": "frame_dig -6",
@@ -144,7 +331,7 @@
         "left#0 (copy)"
       ]
     },
-    "43": {
+    "69": {
       "op": "frame_dig -5",
       "defined_out": [
         "left#0 (copy)",
@@ -155,7 +342,7 @@
         "right#0 (copy)"
       ]
     },
-    "45": {
+    "71": {
       "op": "concat",
       "defined_out": [
         "result#0"
@@ -164,7 +351,7 @@
         "result#0"
       ]
     },
-    "46": {
+    "72": {
       "op": "frame_dig -4",
       "defined_out": [
         "concat#0 (copy)",
@@ -175,7 +362,7 @@
         "concat#0 (copy)"
       ]
     },
-    "48": {
+    "74": {
       "op": "==",
       "defined_out": [
         "tmp%1#0"
@@ -184,24 +371,24 @@
         "tmp%1#0"
       ]
     },
-    "49": {
+    "75": {
       "op": "assert",
       "stack_out": []
     },
-    "50": {
+    "76": {
       "op": "frame_dig -6",
       "stack_out": [
         "left#0 (copy)"
       ]
     },
-    "52": {
+    "78": {
       "op": "frame_dig -5",
       "stack_out": [
         "left#0 (copy)",
         "right#0 (copy)"
       ]
     },
-    "54": {
+    "80": {
       "op": "b|",
       "defined_out": [
         "result#0"
@@ -210,7 +397,7 @@
         "result#0"
       ]
     },
-    "55": {
+    "81": {
       "op": "frame_dig -3",
       "defined_out": [
         "bitwise_or#0 (copy)",
@@ -221,7 +408,7 @@
         "bitwise_or#0 (copy)"
       ]
     },
-    "57": {
+    "83": {
       "op": "==",
       "defined_out": [
         "tmp%3#0"
@@ -230,24 +417,24 @@
         "tmp%3#0"
       ]
     },
-    "58": {
+    "84": {
       "op": "assert",
       "stack_out": []
     },
-    "59": {
+    "85": {
       "op": "frame_dig -6",
       "stack_out": [
         "left#0 (copy)"
       ]
     },
-    "61": {
+    "87": {
       "op": "frame_dig -5",
       "stack_out": [
         "left#0 (copy)",
         "right#0 (copy)"
       ]
     },
-    "63": {
+    "89": {
       "op": "b^",
       "defined_out": [
         "result#0"
@@ -256,7 +443,7 @@
         "result#0"
       ]
     },
-    "64": {
+    "90": {
       "op": "frame_dig -2",
       "defined_out": [
         "bitwise_xor#0 (copy)",
@@ -267,7 +454,7 @@
         "bitwise_xor#0 (copy)"
       ]
     },
-    "66": {
+    "92": {
       "op": "==",
       "defined_out": [
         "tmp%5#0"
@@ -276,24 +463,24 @@
         "tmp%5#0"
       ]
     },
-    "67": {
+    "93": {
       "op": "assert",
       "stack_out": []
     },
-    "68": {
+    "94": {
       "op": "frame_dig -6",
       "stack_out": [
         "left#0 (copy)"
       ]
     },
-    "70": {
+    "96": {
       "op": "frame_dig -5",
       "stack_out": [
         "left#0 (copy)",
         "right#0 (copy)"
       ]
     },
-    "72": {
+    "98": {
       "op": "b&",
       "defined_out": [
         "result#0"
@@ -302,7 +489,7 @@
         "result#0"
       ]
     },
-    "73": {
+    "99": {
       "op": "frame_dig -1",
       "defined_out": [
         "bitwise_and#0 (copy)",
@@ -313,7 +500,7 @@
         "bitwise_and#0 (copy)"
       ]
     },
-    "75": {
+    "101": {
       "op": "==",
       "defined_out": [
         "tmp%7#0"
@@ -322,15 +509,15 @@
         "tmp%7#0"
       ]
     },
-    "76": {
+    "102": {
       "op": "assert",
       "stack_out": []
     },
-    "77": {
+    "103": {
       "retsub": true,
       "op": "retsub"
     },
-    "78": {
+    "104": {
       "subroutine": "test_cases.bytes_ops.contract.do_augmented_assignment_ops",
       "params": {
         "seed#0": "bytes"
@@ -339,10 +526,10 @@
       "stack_in": [],
       "op": "proto 1 0"
     },
-    "81": {
+    "107": {
       "op": "b do_augmented_assignment_ops_block@0"
     },
-    "84": {
+    "110": {
       "block": "do_augmented_assignment_ops_block@0",
       "stack_in": [],
       "op": "frame_dig -1",
@@ -353,8 +540,8 @@
         "seed#0 (copy)"
       ]
     },
-    "86": {
-      "op": "bytec_3 // 0x00",
+    "112": {
+      "op": "pushbytes 0x00",
       "defined_out": [
         "0x00",
         "seed#0 (copy)"
@@ -364,7 +551,7 @@
         "0x00"
       ]
     },
-    "87": {
+    "115": {
       "op": "b&",
       "defined_out": [
         "tmp%0#0"
@@ -373,23 +560,23 @@
         "tmp%0#0"
       ]
     },
-    "88": {
+    "116": {
       "op": "dup"
     },
-    "89": {
+    "117": {
       "op": "frame_bury -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "91": {
-      "op": "bytec_3 // 0x00",
+    "119": {
+      "op": "pushbytes 0x00",
       "stack_out": [
         "seed#0 (copy)",
         "0x00"
       ]
     },
-    "92": {
+    "122": {
       "op": "==",
       "defined_out": [
         "tmp%1#0"
@@ -398,17 +585,17 @@
         "tmp%1#0"
       ]
     },
-    "93": {
+    "123": {
       "op": "assert",
       "stack_out": []
     },
-    "94": {
+    "124": {
       "op": "frame_dig -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "96": {
+    "126": {
       "op": "bytec_0 // 0x05",
       "defined_out": [
         "0x05",
@@ -419,7 +606,7 @@
         "0x05"
       ]
     },
-    "97": {
+    "127": {
       "op": "b|",
       "defined_out": [
         "tmp%2#0"
@@ -428,23 +615,23 @@
         "tmp%2#0"
       ]
     },
-    "98": {
+    "128": {
       "op": "dup"
     },
-    "99": {
+    "129": {
       "op": "frame_bury -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "101": {
+    "131": {
       "op": "bytec_0 // 0x05",
       "stack_out": [
         "seed#0 (copy)",
         "0x05"
       ]
     },
-    "102": {
+    "132": {
       "op": "==",
       "defined_out": [
         "tmp%3#0"
@@ -453,17 +640,17 @@
         "tmp%3#0"
       ]
     },
-    "103": {
+    "133": {
       "op": "assert",
       "stack_out": []
     },
-    "104": {
+    "134": {
       "op": "frame_dig -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "106": {
+    "136": {
       "op": "pushbytes 0x10",
       "defined_out": [
         "0x10",
@@ -474,7 +661,7 @@
         "0x10"
       ]
     },
-    "109": {
+    "139": {
       "op": "b^",
       "defined_out": [
         "tmp%4#0"
@@ -483,16 +670,16 @@
         "tmp%4#0"
       ]
     },
-    "110": {
+    "140": {
       "op": "dup"
     },
-    "111": {
+    "141": {
       "op": "frame_bury -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "113": {
+    "143": {
       "op": "pushbytes 0x15",
       "defined_out": [
         "0x15",
@@ -503,7 +690,7 @@
         "0x15"
       ]
     },
-    "116": {
+    "146": {
       "op": "==",
       "defined_out": [
         "tmp%5#0"
@@ -512,24 +699,24 @@
         "tmp%5#0"
       ]
     },
-    "117": {
+    "147": {
       "op": "assert",
       "stack_out": []
     },
-    "118": {
+    "148": {
       "op": "frame_dig -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "120": {
+    "150": {
       "op": "bytec_0 // 0x05",
       "stack_out": [
         "seed#0 (copy)",
         "0x05"
       ]
     },
-    "121": {
+    "151": {
       "op": "b^",
       "defined_out": [
         "tmp%6#0"
@@ -538,23 +725,23 @@
         "tmp%6#0"
       ]
     },
-    "122": {
+    "152": {
       "op": "dup"
     },
-    "123": {
+    "153": {
       "op": "frame_bury -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "125": {
+    "155": {
       "op": "pushbytes 0x10",
       "stack_out": [
         "seed#0 (copy)",
         "0x10"
       ]
     },
-    "128": {
+    "158": {
       "op": "==",
       "defined_out": [
         "tmp%7#0"
@@ -563,24 +750,24 @@
         "tmp%7#0"
       ]
     },
-    "129": {
+    "159": {
       "op": "assert",
       "stack_out": []
     },
-    "130": {
+    "160": {
       "op": "frame_dig -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "132": {
+    "162": {
       "op": "bytec_0 // 0x05",
       "stack_out": [
         "seed#0 (copy)",
         "0x05"
       ]
     },
-    "133": {
+    "163": {
       "op": "concat",
       "defined_out": [
         "tmp%8#0"
@@ -589,16 +776,16 @@
         "tmp%8#0"
       ]
     },
-    "134": {
+    "164": {
       "op": "dup"
     },
-    "135": {
+    "165": {
       "op": "frame_bury -1",
       "stack_out": [
         "seed#0 (copy)"
       ]
     },
-    "137": {
+    "167": {
       "op": "pushbytes 0x1005",
       "defined_out": [
         "0x1005",
@@ -609,7 +796,7 @@
         "0x1005"
       ]
     },
-    "141": {
+    "171": {
       "op": "==",
       "defined_out": [
         "tmp%9#0"
@@ -618,11 +805,134 @@
         "tmp%9#0"
       ]
     },
-    "142": {
+    "172": {
       "op": "assert",
       "stack_out": []
     },
-    "143": {
+    "173": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "174": {
+      "subroutine": "test_cases.bytes_ops.contract.do_byteops_with_structs",
+      "params": {
+        "a#0": "bytes",
+        "b#0": "bytes"
+      },
+      "block": "do_byteops_with_structs",
+      "stack_in": [],
+      "op": "proto 2 2"
+    },
+    "177": {
+      "op": "b do_byteops_with_structs_block@0"
+    },
+    "180": {
+      "block": "do_byteops_with_structs_block@0",
+      "stack_in": [],
+      "op": "frame_dig -2",
+      "defined_out": [
+        "a%out#0"
+      ],
+      "stack_out": [
+        "a%out#0"
+      ]
+    },
+    "182": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "a%out#0",
+        "b%out#0"
+      ],
+      "stack_out": [
+        "a%out#0",
+        "b%out#0"
+      ]
+    },
+    "184": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "a#0 (copy)"
+      ]
+    },
+    "186": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "a#0 (copy)",
+        "b#0 (copy)"
+      ]
+    },
+    "188": {
+      "op": "concat",
+      "defined_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0"
+      ]
+    },
+    "189": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0",
+        "a#0 (copy)"
+      ]
+    },
+    "191": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0",
+        "a#0 (copy)",
+        "b#0 (copy)"
+      ]
+    },
+    "193": {
+      "op": "concat",
+      "defined_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "194": {
+      "op": "==",
+      "defined_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "a%out#0",
+        "b%out#0",
+        "tmp%2#0"
+      ]
+    },
+    "195": {
+      "op": "assert",
+      "stack_out": [
+        "a%out#0",
+        "b%out#0"
+      ]
+    },
+    "196": {
       "retsub": true,
       "op": "retsub"
     }

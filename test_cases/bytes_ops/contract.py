@@ -1,5 +1,4 @@
-from algopy import Bytes, Contract, subroutine
-
+from algopy import Bytes, Contract, arc4, UInt64, subroutine, op
 
 class BiguintBinaryOps(Contract):
     def approval_program(self) -> bool:
@@ -12,6 +11,8 @@ class BiguintBinaryOps(Contract):
             bitwise_and=Bytes.from_hex("0F"),
         )
         do_augmented_assignment_ops(Bytes.from_hex("FF"))
+        do_byteops_with_structs(Point(UInt64(1), UInt64(2)),
+                                Point(UInt64(3), UInt64(4)))
         return True
 
     def clear_state_program(self) -> bool:
@@ -63,3 +64,11 @@ def do_augmented_assignment_ops(seed: Bytes) -> None:
     seed += five
 
     assert seed == Bytes.from_hex("1005")
+
+class Point(arc4.Struct):
+    x: UInt64
+    y: UInt64
+
+@subroutine()
+def do_byteops_with_structs(a: Point, b: Point) -> None:
+        assert op.concat(a, b) == (a.bytes + b.bytes)

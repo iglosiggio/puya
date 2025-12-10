@@ -1,11 +1,28 @@
 main test_cases.bytes_ops.contract.BiguintBinaryOps.approval_program:
-    block@0: // L5
+    block@0: // L4
         test_cases.bytes_ops.contract.do_some_ops(0xff, 0x0f, 0xff0f, 0xff, 0xf0, 0x0f)
         test_cases.bytes_ops.contract.do_augmented_assignment_ops(0xff)
+        let aggregate%val_as_bytes%0#0: bytes[8] = (itob 1u)
+        let aggregate%as_Encoded(uint64)%0#0: Encoded(uint64) = aggregate%val_as_bytes%0#0
+        let aggregate%head%0#0: bytes = (concat 0x aggregate%as_Encoded(uint64)%0#0)
+        let aggregate%val_as_bytes%1#0: bytes[8] = (itob 2u)
+        let aggregate%as_Encoded(uint64)%1#0: Encoded(uint64) = aggregate%val_as_bytes%1#0
+        let aggregate%head%1#0: bytes = (concat aggregate%head%0#0 aggregate%as_Encoded(uint64)%1#0)
+        let aggregate%as_Encoded(uint64,uint64)%0#0: Encoded(uint64,uint64) = aggregate%head%1#0
+        let tmp%0#0: Encoded(uint64,uint64) = aggregate%as_Encoded(uint64,uint64)%0#0
+        let aggregate%val_as_bytes%2#0: bytes[8] = (itob 3u)
+        let aggregate%as_Encoded(uint64)%2#0: Encoded(uint64) = aggregate%val_as_bytes%2#0
+        let aggregate%head%2#0: bytes = (concat 0x aggregate%as_Encoded(uint64)%2#0)
+        let aggregate%val_as_bytes%3#0: bytes[8] = (itob 4u)
+        let aggregate%as_Encoded(uint64)%3#0: Encoded(uint64) = aggregate%val_as_bytes%3#0
+        let aggregate%head%3#0: bytes = (concat aggregate%head%2#0 aggregate%as_Encoded(uint64)%3#0)
+        let aggregate%as_Encoded(uint64,uint64)%1#0: Encoded(uint64,uint64) = aggregate%head%3#0
+        let tmp%1#0: Encoded(uint64,uint64) = aggregate%as_Encoded(uint64,uint64)%1#0
+        let (do_byteops_with_structs%0#0: Encoded(uint64,uint64), do_byteops_with_structs%1#0: Encoded(uint64,uint64)) = test_cases.bytes_ops.contract.do_byteops_with_structs(tmp%0#0, tmp%1#0)
         return 1u
 
 subroutine test_cases.bytes_ops.contract.do_some_ops(left: bytes, right: bytes, concat: bytes, bitwise_or: bytes, bitwise_xor: bytes, bitwise_and: bytes) -> void:
-    block@0: // L21
+    block@0: // L22
         let tmp%0#0: bytes = (concat left#0 right#0)
         let result#0: bytes = tmp%0#0
         let tmp%1#0: bool = (== result#0 concat#0)
@@ -25,7 +42,7 @@ subroutine test_cases.bytes_ops.contract.do_some_ops(left: bytes, right: bytes, 
         return 
 
 subroutine test_cases.bytes_ops.contract.do_augmented_assignment_ops(seed: bytes) -> void:
-    block@0: // L41
+    block@0: // L42
         let tmp%0#0: bytes = (b& seed#0 0x00)
         let seed#0: bytes = tmp%0#0
         let tmp%1#0: bool = (== seed#0 0x00)
@@ -47,3 +64,13 @@ subroutine test_cases.bytes_ops.contract.do_augmented_assignment_ops(seed: bytes
         let tmp%9#0: bool = (== seed#0 0x1005)
         (assert tmp%9#0)
         return 
+
+subroutine test_cases.bytes_ops.contract.do_byteops_with_structs(a: Encoded(uint64,uint64), b: Encoded(uint64,uint64)) -> <Encoded(uint64,uint64), Encoded(uint64,uint64)>:
+    block@0: // L72
+        let a%out#0: Encoded(uint64,uint64) = a#0
+        let b%out#0: Encoded(uint64,uint64) = b#0
+        let tmp%0#0: bytes = (concat a#0 b#0)
+        let tmp%1#0: bytes = (concat a#0 b#0)
+        let tmp%2#0: bool = (== tmp%0#0 tmp%1#0)
+        (assert tmp%2#0)
+        return a%out#0 b%out#0
