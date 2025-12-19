@@ -2,6 +2,7 @@ import typing
 from collections.abc import Sequence
 
 from puya import log
+from puya.awst import wtypes
 from puya.awst.nodes import (
     BinaryBooleanOperator,
     BoolConstant,
@@ -10,6 +11,7 @@ from puya.awst.nodes import (
     Not,
     NumericComparison,
     NumericComparisonExpression,
+    ReinterpretCast,
 )
 from puya.parse import SourceLocation
 from puyapy import models
@@ -17,6 +19,7 @@ from puyapy.awst_build import intrinsic_factory, pytypes
 from puyapy.awst_build.eb import _expect as expect
 from puyapy.awst_build.eb._base import NotIterableInstanceExpressionBuilder
 from puyapy.awst_build.eb.interface import (
+    BuilderBinaryOp,
     BuilderComparisonOp,
     InstanceBuilder,
     LiteralBuilder,
@@ -101,3 +104,23 @@ class BoolExpressionBuilder(NotIterableInstanceExpressionBuilder):
             source_location=location,
         )
         return BoolExpressionBuilder(result)
+
+    def binary_op(
+        self,
+        other: InstanceBuilder,
+        op: BuilderBinaryOp,
+        location: SourceLocation,
+        *,
+        reverse: bool,
+    ) -> InstanceBuilder:
+        # If we try to import it at the top level we end up with cyclic imports
+        from puyapy.awst_build.eb.uint64 import UInt64ExpressionBuilder
+
+        # Booleans behave like UInt64 under arithmetic operations.
+        # Let's cast ourselves to UInt64 and use the logic there.
+        cast = ReinterpretCast(
+            expr=self.resolve(),
+            wtype=wtypes.uint64_wtype,
+            source_location=self.source_location,
+        )
+        return UInt64ExpressionBuilder(cast).binary_op(other, op, location, reverse=reverse)
