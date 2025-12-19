@@ -1,0 +1,2104 @@
+{
+  "version": 3,
+  "sources": [
+    "../contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAMkB;AAAA;AAIH;AAAqB;AAArB;AAAP;AAJU;AACD;AAIF;AAAoB;AAApB;AAAP;AALU;AAMH;AAJG;AAIH;AAAqB;AAArB;AAAP;AANU;AAOO;AAAV;AAAmB;AAAnB;AAAP;AAPU;AAQO;AAAV;AAAe;AAAf;AAAP;AARU;AASO;AAAV;AAAuB;AAAvB;AAAP;AATU;AAUH;AAAU;AAAV;AAAwB;AAAxB;AAAP;AAEO;AAZG;AAYH;AAAmB;AAAnB;AAAP;AACO;AAZE;AAYF;AAAkB;AAAlB;AAAP;AACO;AAZG;AAYH;AAAmB;AAAnB;AAAP;AAGO;AAAQ;AAAR;AAAqB;AAArB;AAAP;AACO;AAAQ;AAAR;AAAsB;AAAtB;AAAP;AAEO;AApBG;AAoBH;AAAe;AAAf;AAAP;AACO;AApBE;AAoBF;AAAc;AAAd;AAAP;AACO;AApBG;AAoBH;AAAe;;AAAf;AAAP;AAGO;AAAI;AAAJ;AAAiB;AAAjB;AAAP;AACO;AAAI;AAAJ;AAAkB;;AAAlB;AAAP;AAzBS;AADC;AA4BH;AAAoB;AAApB;AAAP;AA3BS;AAAA;AA4BF;AAAmB;;AAAnB;AAAP;AA5BS;AA6BF;AA5BG;AA4BH;AAAoB;AAApB;AAAP;AA7BS;AA8BO;AAAT;AAAkB;AAAlB;AAAP;AA9BS;AA+BO;AAAT;AAAc;AAAd;AAAP;AA/BS;AAgCO;AAAT;AAAsB;;AAAtB;AAAP;AAhCS;AAiCF;AAAS;AAAT;AAAuB;AAAvB;AAAP;AAEO;AApCG;AAoCH;AAAuB;AAAvB;AAAP;AACO;AApCE;AAoCF;AAAsB;;AAAtB;AAAP;AACO;AAAA;AApCG;AAoCH;AAAuB;AAAvB;AAAP;AACO;AAAY;AAAZ;AAAqB;AAArB;AAAP;AACO;AAAY;AAAZ;AAAiB;AAAjB;AAAP;AACO;AAAY;AAAZ;AAAyB;;AAAzB;AAAP;AACO;AAAA;AAAY;AAAZ;AAA0B;AAA1B;AAAP;AA1CU;AA4CH;AA1CG;AA0CH;AAAqB;AAArB;AAAA;AAAP;AA3CS;AA4CF;AA3CG;AA2CH;AAAoB;;AAApB;AAAA;AAAP;AA3CU;AAAA;AA4CH;AAAqB;;AAArB;AAAP;AA5CU;AA6CO;AAAV;AAAmB;AAAnB;AAAP;AA7CU;AA8CO;AAAV;AAAe;;AAAf;AAAP;AACiB;AAAV;AA/CG;AA+CH;AAAuB;AAAvB;AAAP;AA/CU;AAgDO;AAAV;AAAwB;;AAAxB;AAAP;AAlDU;AAoDH;AAAA;AAAA;AAAwB;AAAxB;AAAP;AAnDS;AAoDF;AAAA;AAAA;AAAuB;AAAvB;AAAP;AACO;AApDG;AAoDH;AAAwB;;AAAxB;AAAP;AACO;AAAa;AAAb;AAAsB;AAAtB;AAAP;AACO;AAAa;AAAb;AAAkB;;AAAlB;AAAP;AACoB;AAAb;AAAA;AAAA;AAA0B;AAA1B;AAAP;AACO;AAAa;AAAb;AAA2B;;AAA3B;AAAP;AAEO;;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "test_cases.numeric_upcasts.contract.BooleanBinaryOps.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 3 2 6"
+    },
+    "7": {
+      "op": "bytecblock 0x05 0x 0x0f 0x02 0x0a 0x19"
+    },
+    "20": {
+      "op": "b main_block@0"
+    },
+    "23": {
+      "block": "main_block@0",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "24": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0",
+        "0"
+      ]
+    },
+    "25": {
+      "op": "*",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "26": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "27": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "28": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "29": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "30": {
+      "op": "intc_1 // 3",
+      "defined_out": [
+        "0",
+        "3"
+      ],
+      "stack_out": [
+        "0",
+        "3"
+      ]
+    },
+    "31": {
+      "op": "*",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "32": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%2#0",
+        "0"
+      ]
+    },
+    "33": {
+      "op": "==",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "34": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "35": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "36": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "37": {
+      "op": "bytec_0 // 0x05",
+      "defined_out": [
+        "0x05",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "0x05"
+      ]
+    },
+    "38": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "39": {
+      "op": "bytec_1 // 0x",
+      "defined_out": [
+        "0x",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "0x"
+      ]
+    },
+    "40": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "41": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "42": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "43": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0",
+        "0"
+      ]
+    },
+    "44": {
+      "op": "*",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "45": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%7#0",
+        "0"
+      ]
+    },
+    "46": {
+      "op": "==",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "47": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "48": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "49": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "0",
+        "2"
+      ],
+      "stack_out": [
+        "0",
+        "2"
+      ]
+    },
+    "50": {
+      "op": "*",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "51": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%9#0",
+        "0"
+      ]
+    },
+    "52": {
+      "op": "==",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "53": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "54": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "55": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "0",
+        "3"
+      ]
+    },
+    "56": {
+      "op": "*",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "57": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%11#0",
+        "0"
+      ]
+    },
+    "58": {
+      "op": "==",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "59": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "60": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "61": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "62": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%13#0",
+        "0x05"
+      ]
+    },
+    "63": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "64": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%14#0",
+        "0x"
+      ]
+    },
+    "65": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "66": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "67": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "68": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0",
+        "0"
+      ]
+    },
+    "69": {
+      "op": "*",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "70": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%16#0",
+        "0"
+      ]
+    },
+    "71": {
+      "op": "==",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "72": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "73": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "74": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "0",
+        "3"
+      ]
+    },
+    "75": {
+      "op": "*",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "76": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%18#0",
+        "0"
+      ]
+    },
+    "77": {
+      "op": "==",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "78": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "79": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "0x"
+      ]
+    },
+    "80": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x",
+        "0x05"
+      ]
+    },
+    "81": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "82": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%20#0",
+        "0x"
+      ]
+    },
+    "83": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "84": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "85": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "86": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "0",
+        "3"
+      ]
+    },
+    "87": {
+      "op": "*",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "88": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%22#0",
+        "0"
+      ]
+    },
+    "89": {
+      "op": "==",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "90": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "91": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "0x"
+      ]
+    },
+    "92": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x",
+        "0x05"
+      ]
+    },
+    "93": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "94": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%24#0",
+        "0x"
+      ]
+    },
+    "95": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "96": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "97": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "2"
+      ]
+    },
+    "98": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "2",
+        "0"
+      ]
+    },
+    "99": {
+      "op": "*",
+      "defined_out": [
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0"
+      ]
+    },
+    "100": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%26#0",
+        "0"
+      ]
+    },
+    "101": {
+      "op": "==",
+      "defined_out": [
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%27#0"
+      ]
+    },
+    "102": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "103": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "2"
+      ]
+    },
+    "104": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "2",
+        "3"
+      ]
+    },
+    "105": {
+      "op": "*",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "106": {
+      "op": "intc_3 // 6",
+      "defined_out": [
+        "6",
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0",
+        "6"
+      ]
+    },
+    "107": {
+      "op": "==",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "108": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "109": {
+      "op": "bytec_3 // 0x02",
+      "defined_out": [
+        "0x02"
+      ],
+      "stack_out": [
+        "0x02"
+      ]
+    },
+    "110": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x02",
+        "0x05"
+      ]
+    },
+    "111": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "112": {
+      "op": "bytec 4 // 0x0a",
+      "defined_out": [
+        "0x0a",
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0",
+        "0x0a"
+      ]
+    },
+    "114": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "115": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "116": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "2"
+      ]
+    },
+    "117": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "2",
+        "3"
+      ]
+    },
+    "118": {
+      "op": "*",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "119": {
+      "op": "intc_3 // 6",
+      "stack_out": [
+        "tmp%32#0",
+        "6"
+      ]
+    },
+    "120": {
+      "op": "==",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "121": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "122": {
+      "op": "bytec_3 // 0x02",
+      "stack_out": [
+        "0x02"
+      ]
+    },
+    "123": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x02",
+        "0x05"
+      ]
+    },
+    "124": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "125": {
+      "op": "bytec 4 // 0x0a",
+      "stack_out": [
+        "tmp%34#0",
+        "0x0a"
+      ]
+    },
+    "127": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%35#0"
+      ]
+    },
+    "128": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "129": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "130": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "3",
+        "0"
+      ]
+    },
+    "131": {
+      "op": "*",
+      "defined_out": [
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0"
+      ]
+    },
+    "132": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%36#0",
+        "0"
+      ]
+    },
+    "133": {
+      "op": "==",
+      "defined_out": [
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%37#0"
+      ]
+    },
+    "134": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "135": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "136": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3",
+        "3"
+      ]
+    },
+    "137": {
+      "op": "*",
+      "defined_out": [
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0"
+      ]
+    },
+    "138": {
+      "op": "pushint 9",
+      "defined_out": [
+        "9",
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0",
+        "9"
+      ]
+    },
+    "140": {
+      "op": "==",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "141": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "142": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "143": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "144": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%40#0",
+        "0x05"
+      ]
+    },
+    "145": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0"
+      ]
+    },
+    "146": {
+      "op": "bytec_2 // 0x0f",
+      "defined_out": [
+        "0x0f",
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0",
+        "0x0f"
+      ]
+    },
+    "147": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "148": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "149": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "150": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "3",
+        "0"
+      ]
+    },
+    "151": {
+      "op": "*",
+      "defined_out": [
+        "tmp%43#0"
+      ],
+      "stack_out": [
+        "tmp%43#0"
+      ]
+    },
+    "152": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%43#0",
+        "0"
+      ]
+    },
+    "153": {
+      "op": "==",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "154": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "155": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "156": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "3",
+        "2"
+      ]
+    },
+    "157": {
+      "op": "*",
+      "defined_out": [
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0"
+      ]
+    },
+    "158": {
+      "op": "intc_3 // 6",
+      "stack_out": [
+        "tmp%45#0",
+        "6"
+      ]
+    },
+    "159": {
+      "op": "==",
+      "defined_out": [
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%46#0"
+      ]
+    },
+    "160": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "161": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "162": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3",
+        "3"
+      ]
+    },
+    "163": {
+      "op": "*",
+      "defined_out": [
+        "tmp%47#0"
+      ],
+      "stack_out": [
+        "tmp%47#0"
+      ]
+    },
+    "164": {
+      "op": "pushint 9",
+      "stack_out": [
+        "tmp%47#0",
+        "9"
+      ]
+    },
+    "166": {
+      "op": "==",
+      "defined_out": [
+        "tmp%48#0"
+      ],
+      "stack_out": [
+        "tmp%48#0"
+      ]
+    },
+    "167": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "168": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "169": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%49#0"
+      ],
+      "stack_out": [
+        "tmp%49#0"
+      ]
+    },
+    "170": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%49#0",
+        "0x05"
+      ]
+    },
+    "171": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%50#0"
+      ],
+      "stack_out": [
+        "tmp%50#0"
+      ]
+    },
+    "172": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%50#0",
+        "0x0f"
+      ]
+    },
+    "173": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%51#0"
+      ],
+      "stack_out": [
+        "tmp%51#0"
+      ]
+    },
+    "174": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "175": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "176": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "3",
+        "0"
+      ]
+    },
+    "177": {
+      "op": "*",
+      "defined_out": [
+        "tmp%52#0"
+      ],
+      "stack_out": [
+        "tmp%52#0"
+      ]
+    },
+    "178": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%52#0",
+        "0"
+      ]
+    },
+    "179": {
+      "op": "==",
+      "defined_out": [
+        "tmp%53#0"
+      ],
+      "stack_out": [
+        "tmp%53#0"
+      ]
+    },
+    "180": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "181": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "182": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3",
+        "3"
+      ]
+    },
+    "183": {
+      "op": "*",
+      "defined_out": [
+        "tmp%54#0"
+      ],
+      "stack_out": [
+        "tmp%54#0"
+      ]
+    },
+    "184": {
+      "op": "pushint 9",
+      "stack_out": [
+        "tmp%54#0",
+        "9"
+      ]
+    },
+    "186": {
+      "op": "==",
+      "defined_out": [
+        "tmp%55#0"
+      ],
+      "stack_out": [
+        "tmp%55#0"
+      ]
+    },
+    "187": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "188": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "189": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%56#0"
+      ],
+      "stack_out": [
+        "tmp%56#0"
+      ]
+    },
+    "190": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%56#0",
+        "0x05"
+      ]
+    },
+    "191": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "192": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%57#0",
+        "0x0f"
+      ]
+    },
+    "193": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%58#0"
+      ]
+    },
+    "194": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "195": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "196": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "3",
+        "0"
+      ]
+    },
+    "197": {
+      "op": "*",
+      "defined_out": [
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%59#0"
+      ]
+    },
+    "198": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%59#0",
+        "0"
+      ]
+    },
+    "199": {
+      "op": "==",
+      "defined_out": [
+        "tmp%60#0"
+      ],
+      "stack_out": [
+        "tmp%60#0"
+      ]
+    },
+    "200": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "201": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "202": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "3",
+        "2"
+      ]
+    },
+    "203": {
+      "op": "*",
+      "defined_out": [
+        "tmp%61#0"
+      ],
+      "stack_out": [
+        "tmp%61#0"
+      ]
+    },
+    "204": {
+      "op": "intc_3 // 6",
+      "stack_out": [
+        "tmp%61#0",
+        "6"
+      ]
+    },
+    "205": {
+      "op": "==",
+      "defined_out": [
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%62#0"
+      ]
+    },
+    "206": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "207": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "208": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3",
+        "3"
+      ]
+    },
+    "209": {
+      "op": "*",
+      "defined_out": [
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%63#0"
+      ]
+    },
+    "210": {
+      "op": "pushint 9",
+      "stack_out": [
+        "tmp%63#0",
+        "9"
+      ]
+    },
+    "212": {
+      "op": "==",
+      "defined_out": [
+        "tmp%64#0"
+      ],
+      "stack_out": [
+        "tmp%64#0"
+      ]
+    },
+    "213": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "214": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "215": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%65#0"
+      ],
+      "stack_out": [
+        "tmp%65#0"
+      ]
+    },
+    "216": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%65#0",
+        "0x05"
+      ]
+    },
+    "217": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%66#0"
+      ],
+      "stack_out": [
+        "tmp%66#0"
+      ]
+    },
+    "218": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%66#0",
+        "0x0f"
+      ]
+    },
+    "219": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%67#0"
+      ],
+      "stack_out": [
+        "tmp%67#0"
+      ]
+    },
+    "220": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "221": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "222": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%68#0"
+      ],
+      "stack_out": [
+        "tmp%68#0"
+      ]
+    },
+    "223": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%68#0",
+        "0x05"
+      ]
+    },
+    "224": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%69#0"
+      ],
+      "stack_out": [
+        "tmp%69#0"
+      ]
+    },
+    "225": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%69#0",
+        "0"
+      ]
+    },
+    "226": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%69#0",
+        "tmp%70#0"
+      ],
+      "stack_out": [
+        "tmp%69#0",
+        "tmp%70#0"
+      ]
+    },
+    "227": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%71#0"
+      ],
+      "stack_out": [
+        "tmp%71#0"
+      ]
+    },
+    "228": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "229": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "230": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%72#0"
+      ],
+      "stack_out": [
+        "tmp%72#0"
+      ]
+    },
+    "231": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%72#0",
+        "0x05"
+      ]
+    },
+    "232": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0"
+      ]
+    },
+    "233": {
+      "op": "pushint 15",
+      "defined_out": [
+        "15",
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0",
+        "15"
+      ]
+    },
+    "235": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%73#0",
+        "tmp%74#0"
+      ],
+      "stack_out": [
+        "tmp%73#0",
+        "tmp%74#0"
+      ]
+    },
+    "236": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%75#0"
+      ],
+      "stack_out": [
+        "tmp%75#0"
+      ]
+    },
+    "237": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "238": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "239": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05",
+        "0x05"
+      ]
+    },
+    "240": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%76#0"
+      ],
+      "stack_out": [
+        "tmp%76#0"
+      ]
+    },
+    "241": {
+      "op": "bytec 5 // 0x19",
+      "defined_out": [
+        "0x19",
+        "tmp%76#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "0x19"
+      ]
+    },
+    "243": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%77#0"
+      ],
+      "stack_out": [
+        "tmp%77#0"
+      ]
+    },
+    "244": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "245": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "246": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "0x05",
+        "0x"
+      ]
+    },
+    "247": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%78#0"
+      ],
+      "stack_out": [
+        "tmp%78#0"
+      ]
+    },
+    "248": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%78#0",
+        "0x"
+      ]
+    },
+    "249": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%79#0"
+      ]
+    },
+    "250": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "251": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "252": {
+      "op": "bytec_3 // 0x02",
+      "stack_out": [
+        "0x05",
+        "0x02"
+      ]
+    },
+    "253": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%80#0"
+      ],
+      "stack_out": [
+        "tmp%80#0"
+      ]
+    },
+    "254": {
+      "op": "bytec 4 // 0x0a",
+      "stack_out": [
+        "tmp%80#0",
+        "0x0a"
+      ]
+    },
+    "256": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%81#0"
+      ],
+      "stack_out": [
+        "tmp%81#0"
+      ]
+    },
+    "257": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "258": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "259": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%82#0"
+      ],
+      "stack_out": [
+        "tmp%82#0"
+      ]
+    },
+    "260": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%82#0",
+        "0x05"
+      ]
+    },
+    "261": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%83#0"
+      ],
+      "stack_out": [
+        "tmp%83#0"
+      ]
+    },
+    "262": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%83#0",
+        "0x0f"
+      ]
+    },
+    "263": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%84#0"
+      ],
+      "stack_out": [
+        "tmp%84#0"
+      ]
+    },
+    "264": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "265": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "266": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05",
+        "0x05"
+      ]
+    },
+    "267": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%85#0"
+      ],
+      "stack_out": [
+        "tmp%85#0"
+      ]
+    },
+    "268": {
+      "op": "bytec 5 // 0x19",
+      "stack_out": [
+        "tmp%85#0",
+        "0x19"
+      ]
+    },
+    "270": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%86#0"
+      ],
+      "stack_out": [
+        "tmp%86#0"
+      ]
+    },
+    "271": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "272": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "273": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0"
+      ]
+    },
+    "274": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%87#0",
+        "0x05"
+      ]
+    },
+    "275": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%88#0"
+      ],
+      "stack_out": [
+        "tmp%88#0"
+      ]
+    },
+    "276": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%88#0",
+        "0x"
+      ]
+    },
+    "277": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0"
+      ]
+    },
+    "278": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "279": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "280": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%90#0"
+      ]
+    },
+    "281": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%90#0",
+        "0x05"
+      ]
+    },
+    "282": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%91#0"
+      ],
+      "stack_out": [
+        "tmp%91#0"
+      ]
+    },
+    "283": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%91#0",
+        "0x0f"
+      ]
+    },
+    "284": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%92#0"
+      ],
+      "stack_out": [
+        "tmp%92#0"
+      ]
+    },
+    "285": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "286": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "287": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05",
+        "0x05"
+      ]
+    },
+    "288": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%93#0"
+      ],
+      "stack_out": [
+        "tmp%93#0"
+      ]
+    },
+    "289": {
+      "op": "bytec 5 // 0x19",
+      "stack_out": [
+        "tmp%93#0",
+        "0x19"
+      ]
+    },
+    "291": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%94#0"
+      ],
+      "stack_out": [
+        "tmp%94#0"
+      ]
+    },
+    "292": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "293": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "294": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "0x05",
+        "0x"
+      ]
+    },
+    "295": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%95#0"
+      ],
+      "stack_out": [
+        "tmp%95#0"
+      ]
+    },
+    "296": {
+      "op": "bytec_1 // 0x",
+      "stack_out": [
+        "tmp%95#0",
+        "0x"
+      ]
+    },
+    "297": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%96#0"
+      ],
+      "stack_out": [
+        "tmp%96#0"
+      ]
+    },
+    "298": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "299": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "300": {
+      "op": "bytec_3 // 0x02",
+      "stack_out": [
+        "0x05",
+        "0x02"
+      ]
+    },
+    "301": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%97#0"
+      ],
+      "stack_out": [
+        "tmp%97#0"
+      ]
+    },
+    "302": {
+      "op": "bytec 4 // 0x0a",
+      "stack_out": [
+        "tmp%97#0",
+        "0x0a"
+      ]
+    },
+    "304": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%98#0"
+      ],
+      "stack_out": [
+        "tmp%98#0"
+      ]
+    },
+    "305": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "306": {
+      "op": "intc_1 // 3",
+      "stack_out": [
+        "3"
+      ]
+    },
+    "307": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%99#0"
+      ],
+      "stack_out": [
+        "tmp%99#0"
+      ]
+    },
+    "308": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "tmp%99#0",
+        "0x05"
+      ]
+    },
+    "309": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%100#0"
+      ],
+      "stack_out": [
+        "tmp%100#0"
+      ]
+    },
+    "310": {
+      "op": "bytec_2 // 0x0f",
+      "stack_out": [
+        "tmp%100#0",
+        "0x0f"
+      ]
+    },
+    "311": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%101#0"
+      ],
+      "stack_out": [
+        "tmp%101#0"
+      ]
+    },
+    "312": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "313": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05"
+      ]
+    },
+    "314": {
+      "op": "bytec_0 // 0x05",
+      "stack_out": [
+        "0x05",
+        "0x05"
+      ]
+    },
+    "315": {
+      "op": "b*",
+      "defined_out": [
+        "tmp%102#0"
+      ],
+      "stack_out": [
+        "tmp%102#0"
+      ]
+    },
+    "316": {
+      "op": "bytec 5 // 0x19",
+      "stack_out": [
+        "tmp%102#0",
+        "0x19"
+      ]
+    },
+    "318": {
+      "op": "b==",
+      "defined_out": [
+        "tmp%103#0"
+      ],
+      "stack_out": [
+        "tmp%103#0"
+      ]
+    },
+    "319": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "320": {
+      "op": "pushint 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "322": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}
